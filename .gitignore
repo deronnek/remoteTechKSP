@@ -1,5 +1,4 @@
 Squad
 
-# mod logfile changes don't need to be tracked
-MechJeb2.log
-KerbalEngineer.log
+# logfile changes don't need to be tracked
+**/*.log

@@ -413,7 +413,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.0.5
-		UT = 1572224.91135337
+		UT = 1572622.87135374
 		activeVessel = 0
 		mapViewFiltering = -1026
 		VESSEL
@@ -11734,17 +11734,17 @@ GAME
 			landed = False
 			landedAt = 
 			splashed = False
-			met = 568989.261088031
+			met = 1341016.73435162
 			lct = 231603.997002118
-			lastUT = 800593.298090149
+			lastUT = 1572620.73135374
 			root = 0
-			lat = -60.5043197293957
-			lon = -224.486964124799
-			alt = 131259.653037594
+			lat = 67.7084749548492
+			lon = 213.745443750468
+			alt = 14705632.0799337
 			hgt = -1
-			nrm = 0.8749548,-0.1246534,0.4678846
-			rot = 0.07976332,-0.2670249,0.8246742,-0.4921871
-			CoM = -7.554889E-06,0.9676275,4.082918E-06
+			nrm = -0.6089181,-0.4566762,-0.6485876
+			rot = 0.1067436,-0.2830043,0.8216184,-0.4831747
+			CoM = 0.0004523098,1.035793,0.000260666
 			stg = 2
 			prst = False
 			ref = 1556841379
@@ -11754,13 +11754,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 23342279.8903659
-				ECC = 0.970922080432206
-				INC = 86.3200869189415
-				LPE = 267.95949015833
-				LAN = -73.4213928558966
-				MNA = 0.00203128019906043
-				EPH = 800593.298090149
+				SMA = 23295483.9702241
+				ECC = 0.970898416396324
+				INC = 86.3183175064443
+				LPE = 267.937705478171
+				LAN = 286.57423217096
+				MNA = 0.301443954894795
+				EPH = 1572620.73135374
 				REF = 1
 			}
 			PART
@@ -11785,8 +11785,8 @@ GAME
 				attN = bottom, 1
 				attN = top, 13
 				mass = 0.04
-				temp = 202.025478790253
-				tempExt = 201.960784141392
+				temp = 277.617037127265
+				tempExt = 277.314289298477
 				tempExtUnexp = 4
 				expt = 0
 				state = 0
@@ -11812,6 +11812,18 @@ GAME
 					stagingEnabled = True
 					EVENTS
 					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
 						MakeReference
 						{
 							active = True
@@ -11832,18 +11844,6 @@ GAME
 							guiIcon = Rename Vessel
 							guiName = Rename Vessel
 							category = Rename Vessel
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						ToggleStaging
-						{
-							active = True
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = Disable Staging
-							guiName = Disable Staging
-							category = Disable Staging
 							guiActiveUnfocused = False
 							unfocusedRange = 2
 							externalToEVAOnly = True
@@ -11919,9 +11919,9 @@ GAME
 								Mode = KillRot
 								Attitude = Prograde
 								Frame = World
-								Orientation = -0.1964765,0.3344432,-0.8048893,0.449108
+								Orientation = 0.8020358,-0.5539059,0.2078175,0.08208946
 								Altitude = NaN
-								TimeStamp = 800593.298090149
+								TimeStamp = 1572620.73135374
 								ExtraDelay = 0
 								CmdGuid = 63e800e9-f0c4-4cd3-b0c5-8e3c61a13dfd
 							}
@@ -12027,8 +12027,8 @@ GAME
 				attN = top, 0
 				attN = bottom, 2
 				mass = 0.15
-				temp = 202.005080769136
-				tempExt = 201.915279865097
+				temp = 277.602155491824
+				tempExt = 277.269847208013
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -12080,8 +12080,8 @@ GAME
 				attN = top, 1
 				attN = bottom, 3
 				mass = 0.05
-				temp = 201.98980761389
-				tempExt = 201.91879103606
+				temp = 277.513780540203
+				tempExt = 277.158216663595
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -12133,8 +12133,8 @@ GAME
 				attN = top, 2
 				attN = bottom, -1
 				mass = 0.05
-				temp = 201.983577021609
-				tempExt = 201.899301194791
+				temp = 277.495791772354
+				tempExt = 277.172466857786
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -12187,8 +12187,8 @@ GAME
 				sym = 7
 				srfN = srfAttach, 2
 				mass = 0.05
-				temp = 201.981262902518
-				tempExt = 201.903154855712
+				temp = 277.598799688568
+				tempExt = 277.250464300003
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -12299,8 +12299,8 @@ GAME
 				sym = 7
 				srfN = srfAttach, 2
 				mass = 0.05
-				temp = 201.980941759549
-				tempExt = 201.902980684045
+				temp = 277.598799688568
+				tempExt = 277.250464300003
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -12411,8 +12411,8 @@ GAME
 				sym = 7
 				srfN = srfAttach, 2
 				mass = 0.05
-				temp = 201.980941759549
-				tempExt = 201.902980684045
+				temp = 277.598799688568
+				tempExt = 277.250464300003
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -12523,8 +12523,8 @@ GAME
 				sym = 6
 				srfN = srfAttach, 2
 				mass = 0.05
-				temp = 201.980941759549
-				tempExt = 201.902980684045
+				temp = 277.598799688568
+				tempExt = 277.250464300003
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -12635,8 +12635,8 @@ GAME
 				sym = 11
 				srfN = srfAttach, 2
 				mass = 0.03
-				temp = 201.969644676178
-				tempExt = 201.901962041807
+				temp = 277.434899916822
+				tempExt = 277.124928428189
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -12942,6 +12942,30 @@ GAME
 					{
 					}
 				}
+				MODULE
+				{
+					name = ModuleRTDataTransmitter
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
 			}
 			PART
 			{
@@ -12966,8 +12990,8 @@ GAME
 				sym = 11
 				srfN = srfAttach, 2
 				mass = 0.03
-				temp = 201.968394977355
-				tempExt = 201.895540570685
+				temp = 277.434912941047
+				tempExt = 277.124956256798
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -13273,6 +13297,30 @@ GAME
 					{
 					}
 				}
+				MODULE
+				{
+					name = ModuleRTDataTransmitter
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+						ToggleStaging
+						{
+							active = True
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = Disable Staging
+							guiName = Disable Staging
+							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+					}
+					ACTIONS
+					{
+					}
+				}
 			}
 			PART
 			{
@@ -13297,8 +13345,8 @@ GAME
 				sym = 11
 				srfN = srfAttach, 2
 				mass = 0.03
-				temp = 201.988220301699
-				tempExt = 201.98020982555
+				temp = 277.434989725245
+				tempExt = 277.125090657685
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -13652,8 +13700,8 @@ GAME
 				sym = 10
 				srfN = srfAttach, 2
 				mass = 0.03
-				temp = 202.017430990487
-				tempExt = 202.104591257189
+				temp = 277.434895452946
+				tempExt = 277.124924923225
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -13980,8 +14028,8 @@ GAME
 				attm = 1
 				srfN = srfAttach, 1
 				mass = 0.0001
-				temp = 201.994304766475
-				tempExt = 201.913194532897
+				temp = 277.567634176252
+				tempExt = 277.275714384144
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -14497,7 +14545,7 @@ GAME
 							markUT = 231603.997002118
 							deltaVExpended = 4573.94557612456
 							dragLosses = 100.823883386706
-							gravityLosses = 36456.4019089135
+							gravityLosses = 36367.948017037
 							steeringLosses = 95.1500002826472
 							markLAN = 17.2089352653232
 							markLatitude = -0.0973340054601384
@@ -14578,7 +14626,7 @@ GAME
 								Frame = World
 								Orientation = 0,0,0,1
 								Altitude = NaN
-								TimeStamp = 800593.298090149
+								TimeStamp = 1572620.73135374
 								ExtraDelay = 0
 								CmdGuid = 77306ebf-e64c-49dc-be09-4d70e4b39d8d
 							}
@@ -14653,8 +14701,8 @@ GAME
 				attN = bottom, 0
 				attN = top, 14
 				mass = 0.05
-				temp = 202.115310803818
-				tempExt = 202.051155430747
+				temp = 277.669355198016
+				tempExt = 277.396861108585
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -14746,8 +14794,8 @@ GAME
 				attN = bottom, 13
 				attN = top, 15
 				mass = 0.125
-				temp = 202.204256342096
-				tempExt = 202.13614703287
+				temp = 277.716165052547
+				tempExt = 277.510862919271
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -14788,8 +14836,8 @@ GAME
 				attN = bottom, 14
 				attN = top, 16
 				mass = 0.125
-				temp = 202.515008088812
-				tempExt = 202.630719434961
+				temp = 278.283551824941
+				tempExt = 278.303886899449
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -14829,8 +14877,8 @@ GAME
 				srfN = srfAttach, 2
 				attN = bottom, 15
 				mass = 0.5
-				temp = 202.815058090567
-				tempExt = 202.862820369875
+				temp = 278.870333902644
+				tempExt = 279.008959567586
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -15105,8 +15153,8 @@ GAME
 				srfN = srfAttach, 14
 				attN = bottom, -1
 				mass = 1
-				temp = 202.191550712876
-				tempExt = 202.112738085502
+				temp = 277.708503929365
+				tempExt = 277.395809751271
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -15129,14 +15177,14 @@ GAME
 					name = ModuleRTAntenna
 					isEnabled = True
 					IsRTAntenna = True
-					IsRTActive = False
-					IsRTPowered = False
+					IsRTActive = True
+					IsRTPowered = True
 					IsRTBroken = False
 					RTDishCosAngle = 0.999999939076519
 					RTOmniRange = 0
-					RTDishRange = 0
+					RTDishRange = 6E+10
 					stagingEnabled = True
-					RTAntennaTarget = 00000000-0000-0000-0000-000000000000
+					RTAntennaTarget = 4d756e4d-756e-4d75-6e4d-756e4d756e4d
 					EVENTS
 					{
 						EventToggle
@@ -15151,23 +15199,10 @@ GAME
 							unfocusedRange = 2
 							externalToEVAOnly = True
 						}
-						EventTarget
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Target
-							guiName = No Target
-							category = Target
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
 						EventEditorOpen
 						{
 							active = True
 							guiActive = False
-							guiActiveEditor = True
 							guiActiveUncommand = False
 							guiIcon = Start deployed
 							guiName = Start deployed
@@ -15180,34 +15215,11 @@ GAME
 						{
 							active = True
 							guiActive = False
+							guiActiveEditor = True
 							guiActiveUncommand = False
 							guiIcon = Start retracted
 							guiName = Start retracted
 							category = Start retracted
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						EventOpen
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = 
-							guiName = Activate
-							category = 
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						EventClose
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = 
-							guiName = Deactivate
-							category = 
 							guiActiveUnfocused = False
 							unfocusedRange = 2
 							externalToEVAOnly = True
@@ -15232,7 +15244,7 @@ GAME
 							guiIcon = [EVA] Force Open
 							guiName = [EVA] Force Open
 							category = [EVA] Force Open
-							guiActiveUnfocused = True
+							guiActiveUnfocused = False
 							unfocusedRange = 5
 							externalToEVAOnly = True
 						}
@@ -15244,7 +15256,7 @@ GAME
 							guiIcon = [EVA] Force Close
 							guiName = [EVA] Force Close
 							category = [EVA] Force Close
-							guiActiveUnfocused = False
+							guiActiveUnfocused = True
 							unfocusedRange = 5
 							externalToEVAOnly = True
 						}
@@ -15256,6 +15268,42 @@ GAME
 							guiIcon = Disable Staging
 							guiName = Disable Staging
 							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventTarget
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Target
+							guiName = Mun
+							category = Target
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventOpen
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = 
+							guiName = Activate
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventClose
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = 
+							guiName = Deactivate
+							category = 
 							guiActiveUnfocused = False
 							unfocusedRange = 2
 							externalToEVAOnly = True
@@ -15327,8 +15375,8 @@ GAME
 				srfN = srfAttach, 14
 				attN = bottom, -1
 				mass = 1
-				temp = 202.368322649591
-				tempExt = 202.466563512269
+				temp = 277.70818476435
+				tempExt = 277.392342976018
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -15351,14 +15399,14 @@ GAME
 					name = ModuleRTAntenna
 					isEnabled = True
 					IsRTAntenna = True
-					IsRTActive = False
-					IsRTPowered = False
+					IsRTActive = True
+					IsRTPowered = True
 					IsRTBroken = False
 					RTDishCosAngle = 0.999999939076519
 					RTOmniRange = 0
-					RTDishRange = 0
+					RTDishRange = 6E+10
 					stagingEnabled = True
-					RTAntennaTarget = 00000000-0000-0000-0000-000000000000
+					RTAntennaTarget = 4d696e6d-7573-4d69-6e6d-75734d696e6d
 					EVENTS
 					{
 						EventToggle
@@ -15373,23 +15421,10 @@ GAME
 							unfocusedRange = 2
 							externalToEVAOnly = True
 						}
-						EventTarget
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = Target
-							guiName = No Target
-							category = Target
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
 						EventEditorOpen
 						{
 							active = True
 							guiActive = False
-							guiActiveEditor = True
 							guiActiveUncommand = False
 							guiIcon = Start deployed
 							guiName = Start deployed
@@ -15402,34 +15437,11 @@ GAME
 						{
 							active = True
 							guiActive = False
+							guiActiveEditor = True
 							guiActiveUncommand = False
 							guiIcon = Start retracted
 							guiName = Start retracted
 							category = Start retracted
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						EventOpen
-						{
-							active = True
-							guiActive = True
-							guiActiveUncommand = False
-							guiIcon = 
-							guiName = Activate
-							category = 
-							guiActiveUnfocused = False
-							unfocusedRange = 2
-							externalToEVAOnly = True
-						}
-						EventClose
-						{
-							active = False
-							guiActive = False
-							guiActiveUncommand = False
-							guiIcon = 
-							guiName = Deactivate
-							category = 
 							guiActiveUnfocused = False
 							unfocusedRange = 2
 							externalToEVAOnly = True
@@ -15454,7 +15466,7 @@ GAME
 							guiIcon = [EVA] Force Open
 							guiName = [EVA] Force Open
 							category = [EVA] Force Open
-							guiActiveUnfocused = True
+							guiActiveUnfocused = False
 							unfocusedRange = 5
 							externalToEVAOnly = True
 						}
@@ -15466,7 +15478,7 @@ GAME
 							guiIcon = [EVA] Force Close
 							guiName = [EVA] Force Close
 							category = [EVA] Force Close
-							guiActiveUnfocused = False
+							guiActiveUnfocused = True
 							unfocusedRange = 5
 							externalToEVAOnly = True
 						}
@@ -15478,6 +15490,42 @@ GAME
 							guiIcon = Disable Staging
 							guiName = Disable Staging
 							category = Disable Staging
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventTarget
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = Target
+							guiName = Minmus
+							category = Target
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventOpen
+						{
+							active = False
+							guiActive = False
+							guiActiveUncommand = False
+							guiIcon = 
+							guiName = Activate
+							category = 
+							guiActiveUnfocused = False
+							unfocusedRange = 2
+							externalToEVAOnly = True
+						}
+						EventClose
+						{
+							active = True
+							guiActive = True
+							guiActiveUncommand = False
+							guiIcon = 
+							guiName = Deactivate
+							category = 
 							guiActiveUnfocused = False
 							unfocusedRange = 2
 							externalToEVAOnly = True
@@ -15550,8 +15598,8 @@ GAME
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.001
-				temp = 204.015348008917
-				tempExt = 204.206797557411
+				temp = 277.582305248656
+				tempExt = 277.362627171884
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -15593,8 +15641,8 @@ GAME
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.001
-				temp = 205.77603200043
-				tempExt = 205.789868746515
+				temp = 277.496981683015
+				tempExt = 277.227714420545
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -15636,8 +15684,8 @@ GAME
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.001
-				temp = 207.546366752718
-				tempExt = 207.567675954239
+				temp = 277.539740679973
+				tempExt = 277.267862094459
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -15679,8 +15727,8 @@ GAME
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.001
-				temp = 209.33014374143
-				tempExt = 209.562556536728
+				temp = 277.614878516031
+				tempExt = 277.353415814754
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -15720,8 +15768,8 @@ GAME
 				sym = 28
 				srfN = srfAttach, 22
 				mass = 0.3
-				temp = 209.999049090264
-				tempExt = 210.84812550776
+				temp = 277.671174038653
+				tempExt = 277.447829560125
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -15743,7 +15791,7 @@ GAME
 				{
 					name = ModuleDeployableSolarPanel
 					isEnabled = True
-					currentRotation = (-0.1729599, -0.1730955, 0.6856191, -0.6856015)
+					currentRotation = (-0.6014947, -0.6015352, 0.3717722, -0.3716787)
 					stateString = EXTENDED
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
@@ -15831,8 +15879,8 @@ GAME
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.001
-				temp = 201.675302968223
-				tempExt = 201.691904226569
+				temp = 277.584059972293
+				tempExt = 277.363841368676
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -15874,8 +15922,8 @@ GAME
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.001
-				temp = 201.139704613027
-				tempExt = 201.081859720484
+				temp = 277.500985358358
+				tempExt = 277.230874109569
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -15917,8 +15965,8 @@ GAME
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.001
-				temp = 200.617039069329
-				tempExt = 200.521800216795
+				temp = 277.543935287955
+				tempExt = 277.273388646808
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -15960,8 +16008,8 @@ GAME
 				attN = top, -1
 				attN = bottom, -1
 				mass = 0.001
-				temp = 200.115597354301
-				tempExt = 199.947120227966
+				temp = 277.621029965513
+				tempExt = 277.361211702883
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -16001,8 +16049,8 @@ GAME
 				sym = 23
 				srfN = srfAttach, 27
 				mass = 0.3
-				temp = 199.938269532061
-				tempExt = 199.59037447433
+				temp = 277.677929967939
+				tempExt = 277.458171718902
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -16024,7 +16072,7 @@ GAME
 				{
 					name = ModuleDeployableSolarPanel
 					isEnabled = True
-					currentRotation = (0.6855986, 0.6856202, -0.1730995, 0.1729627)
+					currentRotation = (0.3716747, 0.3717779, -0.6015379, 0.6014909)
 					stateString = EXTENDED
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
@@ -16095,7 +16143,7 @@ GAME
 				Gear = True, 0
 				Light = False, 0
 				RCS = False, 800498.398090061
-				SAS = False, 769121.225746289
+				SAS = False, 1572534.89135366
 				Brakes = False, 0
 				Abort = False, 0
 				Custom01 = False, 0
@@ -16122,9 +16170,9 @@ GAME
 			}
 			CTRLSTATE
 			{
-				pitch = 5.049384E-06
-				yaw = 1.122576E-06
-				roll = -1.876142E-06
+				pitch = -1.590744E-05
+				yaw = -6.826142E-06
+				roll = 0.00108335
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0

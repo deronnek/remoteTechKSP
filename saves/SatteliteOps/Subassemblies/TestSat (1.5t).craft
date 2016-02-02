@@ -1,15 +1,15 @@
-ship = TestSat (1.0t)
+ship = TestSat (1.5t)
 version = 1.0.5
-description = A basic satellite weighing 1.0t for testing launchers.
+description = A basic satellite weighing 1.5t for testing launchers.
 type = None
-size = 0.9992003,1.708141,0.9992006
+size = 0.9992003,1.708142,0.9992007
 PART
 {
 	part = rcsTankMini_4294635538
 	partName = Part
-	pos = -0.01062742,14.49079,0.3266614
+	pos = -0.263743,14.89107,0.8740694
 	attPos = 0,0,0
-	attPos0 = -0.01062742,14.49079,0.3266614
+	attPos0 = -0.263743,14.89107,0.8740694
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -38,7 +38,7 @@ PART
 	RESOURCE
 	{
 		name = MonoPropellant
-		amount = 55.9999990463257
+		amount = 80
 		maxAmount = 80
 		flowState = True
 		isTweakable = True
@@ -51,7 +51,7 @@ PART
 {
 	part = batteryBankMini_4294623088
 	partName = Part
-	pos = -0.01062742,14.77828,0.3266614
+	pos = -0.263743,15.17856,0.8740694
 	attPos = 0,0,0
 	attPos0 = 0.08789301,14.60227,-0.4800643
 	rot = 0,0,0,1
@@ -98,7 +98,7 @@ PART
 {
 	part = mediumDishAntenna_4294566212
 	partName = Part
-	pos = -0.3469349,14.7835,0.3266614
+	pos = -0.6000504,15.18378,0.8740694
 	attPos = 0,0,0
 	attPos0 = -0.3363075,0.005208015,1.855537E-08
 	rot = 0.5000001,-0.4999999,0.5000001,0.4999999
@@ -419,7 +419,7 @@ PART
 {
 	part = mediumDishAntenna_4294556788
 	partName = Part
-	pos = 0.3256801,14.7835,0.3266605
+	pos = 0.07256457,15.18378,0.8740685
 	attPos = 0,0,0
 	attPos0 = 0.3363075,0.005208015,-4.795631E-08
 	rot = 0.5000001,0.4999999,-0.5000001,0.4999999
@@ -740,7 +740,7 @@ PART
 {
 	part = probeCoreOcto_4294652594
 	partName = Part
-	pos = -0.01062742,15.06537,0.3266614
+	pos = -0.263743,15.46565,0.8740694
 	attPos = 0,0,0
 	attPos0 = 0,15,0
 	rot = 0,0,0,1
@@ -1009,7 +1009,7 @@ PART
 {
 	part = solarPanels4_4294580950
 	partName = Part
-	pos = -0.01062742,15.04785,-0.01670828
+	pos = -0.263743,15.44813,0.5306997
 	attPos = 0,0,0
 	attPos0 = -3.001831E-08,-0.01750946,-0.3433694
 	rot = 0,0.7071069,0,-0.7071067
@@ -1112,7 +1112,7 @@ PART
 {
 	part = solarPanels4_4294580784
 	partName = Part
-	pos = -0.01062742,15.04785,0.6700305
+	pos = -0.263743,15.44813,1.217438
 	attPos = 0,0,0
 	attPos0 = 6.003661E-08,-0.01750946,0.3433694
 	rot = 0,-0.7071068,0,-0.7071068
@@ -1215,7 +1215,7 @@ PART
 {
 	part = RTLongAntenna2_4294573268
 	partName = Part
-	pos = -0.01062742,15.24027,0.001853317
+	pos = -0.263743,15.64055,0.5492613
 	attPos = 0,0,0
 	attPos0 = 2.839559E-08,0.1749058,-0.3248077
 	rot = 0,0,0,1
@@ -1482,7 +1482,7 @@ PART
 {
 	part = RTLongAntenna2_4294572854
 	partName = Part
-	pos = -0.01062742,15.24027,0.6514685
+	pos = -0.263743,15.64055,1.198877
 	attPos = 0,0,0
 	attPos0 = 4.6524E-16,0.1749058,0.3248077
 	rot = 0,1,0,-4.371139E-08
@@ -1749,7 +1749,7 @@ PART
 {
 	part = RCSBlock_4294560262
 	partName = Part
-	pos = -0.2943245,15.05109,0.04401371
+	pos = -0.5474401,15.45137,0.5914217
 	attPos = 0,0,0
 	attPos0 = -0.2836971,-0.01428127,-0.2826474
 	rot = 0,0.3826841,0,-0.9238793
@@ -1853,7 +1853,7 @@ PART
 {
 	part = RCSBlock_4294559732
 	partName = Part
-	pos = -0.2932748,15.05109,0.6103585
+	pos = -0.5463903,15.45137,1.157767
 	attPos = 0,0,0
 	attPos0 = -0.2826474,-0.01428127,0.283697
 	rot = 0,-0.3826828,0,-0.9238798
@@ -1957,7 +1957,7 @@ PART
 {
 	part = RCSBlock_4294559648
 	partName = Part
-	pos = 0.2730696,15.05109,0.6093085
+	pos = 0.01995406,15.45137,1.156716
 	attPos = 0,0,0
 	attPos0 = 0.2836971,-0.01428127,0.2826474
 	rot = 0,-0.9238793,0,-0.3826841
@@ -2061,7 +2061,7 @@ PART
 {
 	part = RCSBlock_4294559564
 	partName = Part
-	pos = 0.2720199,15.05109,0.04296401
+	pos = 0.01890436,15.45137,0.590372
 	attPos = 0,0,0
 	attPos0 = 0.2826474,-0.01428127,-0.2836971
 	rot = 0,-0.9238798,0,0.3826828
@@ -2165,7 +2165,7 @@ PART
 {
 	part = rcsTankMini_4294611410
 	partName = Part
-	pos = -0.01062742,15.43994,0.3266614
+	pos = -0.263743,15.84022,0.8740694
 	attPos = 0,0,0
 	attPos0 = 0,0.3745813,0
 	rot = 0,0,0,1
@@ -2182,6 +2182,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
+	link = rcsTankMini_4292469642
+	attN = top,rcsTankMini_4292469642
 	attN = bottom,probeCoreOcto_4294652594
 	EVENTS
 	{
@@ -2195,7 +2197,50 @@ PART
 	RESOURCE
 	{
 		name = MonoPropellant
-		amount = 64.0000009536743
+		amount = 80
+		maxAmount = 80
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = rcsTankMini_4292469642
+	partName = Part
+	pos = -0.263743,16.21523,0.8740694
+	attPos = 0,0,0
+	attPos0 = 0,0.375,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	attN = bottom,rcsTankMini_4294611410
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = MonoPropellant
+		amount = 80
 		maxAmount = 80
 		flowState = True
 		isTweakable = True

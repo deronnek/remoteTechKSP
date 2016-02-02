@@ -1,4 +1,14 @@
 Squad
+.DS_Store
 
 # logfile changes don't need to be tracked
 **/*.log
+
+# don't track mechjeb config files (they proliferate for each craft type)
+**/PluginData/MechJeb2/*.cfg
+
+# don't track Engineer config files
+**/KerbalEngineer/Settings/*.xml
+
+# don't track auto-saved craft
+**/Ships/*/Auto-Saved*.craft

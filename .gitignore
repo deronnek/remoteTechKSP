@@ -12,3 +12,7 @@ Squad
 
 # don't track auto-saved craft
 **/Ships/*/Auto-Saved*.craft
+
+# don't track module manager cache or SHA file
+GameData/ModuleManager.ConfigSHA
+GameData/ModuleManager.ConfigCache

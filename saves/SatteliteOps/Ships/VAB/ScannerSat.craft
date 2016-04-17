@@ -2,14 +2,14 @@ ship = ScannerSat
 version = 1.0.5
 description = 
 type = VAB
-size = 9.917355,29.29561,9.917367
+size = 9.917355,45.57212,9.917366
 PART
 {
 	part = probeCoreOcto2_4293936190
 	partName = Part
-	pos = 0.5473227,23.90633,-1.313533
+	pos = 0.5800332,40.18284,-1.442259
 	attPos = 0,0,0
-	attPos0 = 0.5473227,23.90633,-1.313533
+	attPos0 = 0.5800332,40.18284,-1.442259
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -24,8 +24,8 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = (0.0, 0.0, 0.0)
-	link = sasModule_4293324850
 	link = RCSFuelTank_4293587948
+	link = sasModule_4293324850
 	attN = bottom,RCSFuelTank_4293587948
 	attN = top,sasModule_4293324850
 	EVENTS
@@ -711,378 +711,9 @@ PART
 }
 PART
 {
-	part = sasModule_4293324850
-	partName = Part
-	pos = 0.5473227,24.0585,-1.313533
-	attPos = 0,0,0
-	attPos0 = 0,0.1521721,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	link = SurveyScanner_4294669412
-	attN = bottom,probeCoreOcto2_4293936190
-	attN = top,SurveyScanner_4294669412
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleReactionWheel
-		isEnabled = True
-		stateString = Active
-		stagingEnabled = True
-		WheelState = Active
-		EVENTS
-		{
-			OnToggle
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Toggle Torque
-				guiName = Toggle Torque
-				category = Toggle Torque
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			Activate
-			{
-				actionGroup = None
-			}
-			Deactivate
-			{
-				actionGroup = None
-			}
-			Toggle
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 0.625
-		defaultScale = 0.625
-		defaultTransformScale = (0.5, 0.5, 0.5)
-		DryCost = 600
-		stagingEnabled = True
-		EVENTS
-		{
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
-	part = SurveyScanner_4294669412
-	partName = Part
-	pos = 0.5473227,24.14961,-1.313533
-	attPos = 0,0,0
-	attPos0 = 0,0.09111023,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	istg = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
-	attN = bottom,sasModule_4293324850
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleOrbitalSurveyor
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-			PerformSurvey
-			{
-				active = False
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Perform orbital survey
-				guiName = Perform orbital survey
-				category = Perform orbital survey
-				guiActiveUnfocused = True
-				unfocusedRange = 3
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleOrbitalScanner
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-			SwitchResource
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Resource
-				guiName = Resource
-				category = Resource
-				guiActiveUnfocused = True
-				unfocusedRange = 3
-				externalToEVAOnly = True
-			}
-			ToggleOverlay
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Toggle Overlay
-				guiName = Toggle Overlay
-				category = Toggle Overlay
-				guiActiveUnfocused = True
-				unfocusedRange = 3
-				externalToEVAOnly = True
-			}
-			SetColor
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Color: Monochrome
-				guiName = Color: Monochrome [0%]
-				category = Color: Monochrome
-				guiActiveUnfocused = True
-				unfocusedRange = 3
-				externalToEVAOnly = True
-			}
-			IncreaseCutoff
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Cutoff +
-				guiName = Cutoff +
-				category = Cutoff +
-				guiActiveUnfocused = True
-				unfocusedRange = 3
-				externalToEVAOnly = True
-			}
-			DecreaseCutoff
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Cutoff -
-				guiName = Cutoff -
-				category = Cutoff -
-				guiActiveUnfocused = True
-				unfocusedRange = 3
-				externalToEVAOnly = True
-			}
-			ActivateScanner
-			{
-				active = False
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Activate
-				guiName = Activate
-				category = Activate
-				guiActiveUnfocused = True
-				unfocusedRange = 3
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAnimationGroup
-		isEnabled = True
-		_isActive = False
-		isDeployed = False
-		stagingEnabled = True
-		EVENTS
-		{
-			DeployModule
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Deploy
-				guiName = Deploy Scanner
-				category = Deploy
-				guiActiveUnfocused = True
-				unfocusedRange = 3
-				externalToEVAOnly = True
-			}
-			RetractModule
-			{
-				active = False
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Retract
-				guiName = Retract Scanner
-				category = Retract
-				guiActiveUnfocused = True
-				unfocusedRange = 3
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-			DeployModuleAction
-			{
-				actionGroup = None
-			}
-			RetractModuleAction
-			{
-				actionGroup = None
-			}
-			ToggleModuleAction
-			{
-				actionGroup = None
-			}
-		}
-	}
-	MODULE
-	{
-		name = TweakScale
-		isEnabled = True
-		currentScale = 100
-		defaultScale = 100
-		defaultTransformScale = (1, 1, 1)
-		DryCost = 1500
-		stagingEnabled = True
-		EVENTS
-		{
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-		}
-		ACTIONS
-		{
-		}
-	}
-}
-PART
-{
 	part = RCSFuelTank_4293587948
 	partName = Part
-	pos = 0.5473227,23.55997,-1.313533
+	pos = 0.5800332,39.83648,-1.442259
 	attPos = 0,0,0
 	attPos0 = 0,-0.346365,0
 	rot = 0,0,0,1
@@ -1159,7 +790,7 @@ PART
 {
 	part = batteryBank_4293611680
 	partName = Part
-	pos = 0.5473227,23.16381,-1.313533
+	pos = 0.5800332,39.44032,-1.442259
 	attPos = 0,0,0
 	attPos0 = 0,-0.3961582,0
 	rot = 0,0,0,1
@@ -1234,7 +865,7 @@ PART
 {
 	part = batteryBank_4293611284
 	partName = Part
-	pos = 0.5473227,22.94208,-1.313533
+	pos = 0.5800332,39.21859,-1.442259
 	attPos = 0,0,0
 	attPos0 = 0,-0.2217102,0
 	rot = 0,0,0,1
@@ -1313,7 +944,7 @@ PART
 {
 	part = batteryBank_4294592046
 	partName = Part
-	pos = 0.5473227,22.72038,-1.313533
+	pos = 0.5800332,38.99689,-1.442259
 	attPos = 0,0,0
 	attPos0 = 0,-0.2217102,0
 	rot = 0,0,0,1
@@ -1386,7 +1017,7 @@ PART
 {
 	part = stackDecoupler_4293255230
 	partName = Part
-	pos = 0.5473227,22.54446,-1.313533
+	pos = 0.5800332,38.82097,-1.442259
 	attPos = 0,0,0
 	attPos0 = 0,-0.1759071,0
 	rot = 0,0,0,1
@@ -1584,7 +1215,7 @@ PART
 {
 	part = mediumDishAntenna_4291918078
 	partName = Part
-	pos = 0.08926585,23.12535,-1.77159
+	pos = 0.1219763,39.40186,-1.900316
 	attPos = 0,0,0
 	attPos0 = -0.4580568,-0.03845596,-0.4580568
 	rot = -0.2705981,0.6532815,-0.6532816,-0.270598
@@ -1905,7 +1536,7 @@ PART
 {
 	part = mediumDishAntenna_4294595940
 	partName = Part
-	pos = 1.00538,23.12535,-0.8554761
+	pos = 1.03809,39.40186,-0.9842023
 	attPos = 0,0,0
 	attPos0 = 0.4580569,-0.03845596,0.4580568
 	rot = -0.6532816,-0.2705981,0.2705981,-0.6532815
@@ -2226,7 +1857,7 @@ PART
 {
 	part = RTLongAntenna2_4294625170
 	partName = Part
-	pos = 0.9860204,22.98742,-1.752231
+	pos = 1.018731,39.26393,-1.880957
 	attPos = 0,0,0
 	attPos0 = 0.4386978,0.04533195,-0.4386977
 	rot = 0.2705981,0.6532815,-0.6532816,0.270598
@@ -2493,7 +2124,7 @@ PART
 {
 	part = RTLongAntenna2_4294590496
 	partName = Part
-	pos = 0.108625,22.98742,-0.8748353
+	pos = 0.1413355,39.26393,-1.003561
 	attPos = 0,0,0
 	attPos0 = -0.4386977,0.04533195,0.4386977
 	rot = -0.6532816,0.270598,-0.2705981,-0.6532815
@@ -2760,7 +2391,7 @@ PART
 {
 	part = solarPanels4_4294573414
 	partName = Part
-	pos = 1.151464,23.64803,-1.313533
+	pos = 1.184175,39.92454,-1.442259
 	attPos = 0,0,0
 	attPos0 = 0.6041411,0.08806038,0
 	rot = 0,1,0,0
@@ -2893,7 +2524,7 @@ PART
 {
 	part = solarPanels4_4294555616
 	partName = Part
-	pos = 0.5473228,23.64803,-1.917674
+	pos = 0.5800333,39.92454,-2.0464
 	attPos = 0,0,0
 	attPos0 = 5.960464E-08,0.08806038,-0.604141
 	rot = 0,0.7071068,0,-0.7071068
@@ -3026,7 +2657,7 @@ PART
 {
 	part = solarPanels4_4294555510
 	partName = Part
-	pos = -0.05681837,23.64803,-1.313533
+	pos = -0.02410787,39.92454,-1.442259
 	attPos = 0,0,0
 	attPos0 = -0.6041411,0.08806038,0
 	rot = 0,-4.371139E-08,0,-1
@@ -3159,7 +2790,7 @@ PART
 {
 	part = solarPanels4_4294555404
 	partName = Part
-	pos = 0.5473228,23.64803,-0.709392
+	pos = 0.5800333,39.92454,-0.8381183
 	attPos = 0,0,0
 	attPos0 = 5.960464E-08,0.08806038,0.604141
 	rot = 0,-0.7071068,0,-0.7071068
@@ -3292,7 +2923,7 @@ PART
 {
 	part = RCSBlock_4293370824
 	partName = Part
-	pos = 0.5480649,22.87008,-0.6524824
+	pos = 0.5807754,39.14659,-0.7812086
 	attPos = 0,0,0
 	attPos0 = 0.0007422566,-0.07200623,0.6610506
 	rot = -1.264406E-07,0.7071068,-1.264406E-07,0.7071068
@@ -3424,7 +3055,7 @@ PART
 {
 	part = RCSBlock_4294554620
 	partName = Part
-	pos = 1.208373,22.87008,-1.314275
+	pos = 1.241083,39.14659,-1.443001
 	attPos = 0,0,0
 	attPos0 = 0.6610505,-0.07200623,-0.000742197
 	rot = -1.788139E-07,1,0,0
@@ -3556,10 +3187,10 @@ PART
 {
 	part = RCSBlock_4294554534
 	partName = Part
-	pos = 0.5465804,22.87008,-1.974584
+	pos = 0.5792909,39.14659,-2.10331
 	attPos = 0,0,0
 	attPos0 = -0.0007423162,-0.07200623,-0.6610506
-	rot = -1.264406E-07,0.7071068,1.264406E-07,-0.7071069
+	rot = -1.264406E-07,0.7071068,1.264406E-07,-0.7071068
 	attRot = 0,0,0,1
 	attRot0 = -1.264406E-07,0.7071068,1.264406E-07,-0.7071069
 	mir = 1,1,1
@@ -3688,7 +3319,7 @@ PART
 {
 	part = RCSBlock_4294554448
 	partName = Part
-	pos = -0.1137278,22.87008,-1.312791
+	pos = -0.08101732,39.14659,-1.441517
 	attPos = 0,0,0
 	attPos0 = -0.6610505,-0.07200623,0.0007423162
 	rot = 0,0,1.788139E-07,-1
@@ -3820,7 +3451,7 @@ PART
 {
 	part = fairingSize2_4293347816
 	partName = Part
-	pos = 0.5473227,22.19147,-1.313533
+	pos = 0.5800332,38.46798,-1.442259
 	attPos = 0,0,0
 	attPos0 = 0,-0.3529949,0
 	rot = 0,0,0,1
@@ -3834,8 +3465,8 @@ PART
 	sqor = 3
 	sepI = 0
 	attm = 0
-	modCost = 421.799
-	modMass = 0.7029983
+	modCost = 421.7991
+	modMass = 0.7029985
 	modSize = (0.0, 0.0, 0.0)
 	link = probeStackLarge_4293347770
 	attN = top,stackDecoupler_4293255230
@@ -4014,7 +3645,7 @@ PART
 {
 	part = probeStackLarge_4293347770
 	partName = Part
-	pos = 0.5473227,21.80147,-1.313533
+	pos = 0.5800332,38.07798,-1.442259
 	attPos = 0,0,0
 	attPos0 = 0,-0.3900013,0
 	rot = 0,0,0,1
@@ -4392,7 +4023,7 @@ PART
 {
 	part = fuelTank2-2_4293347728
 	partName = Part
-	pos = 0.5473227,20.67397,-1.313533
+	pos = 0.5800332,36.95048,-1.442259
 	attPos = 0,0,0
 	attPos0 = 0,-1.127503,0
 	rot = 0,0,0,1
@@ -4483,7 +4114,7 @@ PART
 {
 	part = liquidEngine2-2_4293347698
 	partName = Part
-	pos = 0.5473227,19.00953,-1.313533
+	pos = 0.5800332,35.28604,-1.442259
 	attPos = 0,0,0
 	attPos0 = 0,-1.664446,0
 	rot = 0,0,0,1
@@ -4834,7 +4465,7 @@ PART
 {
 	part = decoupler1-2_4293347598
 	partName = Part
-	pos = 0.5473227,17.82324,-1.313533
+	pos = 0.5800332,34.09975,-1.442259
 	attPos = 0,0,0
 	attPos0 = 0,-1.186293,0
 	rot = 0,0,0,1
@@ -5032,7 +4663,7 @@ PART
 {
 	part = probeStackLarge_4292582128
 	partName = Part
-	pos = 0.5473227,17.26777,-1.313533
+	pos = 0.5800332,33.54428,-1.442259
 	attPos = 0,0,0
 	attPos0 = 0,-0.5554695,0
 	rot = 0,0,0,1
@@ -5410,7 +5041,7 @@ PART
 {
 	part = fuelTank3-2_4293347526
 	partName = Part
-	pos = 0.5473227,13.32777,-1.313533
+	pos = 0.5800332,29.60428,-1.442259
 	attPos = 0,0,0
 	attPos0 = 0,-3.940001,0
 	rot = 0,0,0,1
@@ -5505,7 +5136,7 @@ PART
 {
 	part = strutConnector_4293347496
 	partName = CompoundPart
-	pos = 0.8636398,11.26091,-2.494048
+	pos = 0.8963503,27.53742,-2.622774
 	attPos = 0,0,0
 	attPos0 = 0.3163167,-2.06686,-1.180512
 	rot = 5.733294E-07,0.7933532,-4.399312E-07,-0.6087616
@@ -5535,7 +5166,7 @@ PART
 	PARTDATA
 	{
 		tgt = 4293346128
-		pos = -1.086844,0.2045895,0.1319846
+		pos = -1.086845,0.2046067,0.1319848
 		rot = 0,0.7078436,-1.278839E-07,0.7063692
 		dir = -0.9758148,0.1836925,0.1185022
 	}
@@ -5592,7 +5223,7 @@ PART
 {
 	part = strutConnector_4293347434
 	partName = CompoundPart
-	pos = -0.6331902,11.26091,-1.629852
+	pos = -0.6004797,27.53742,-1.758578
 	attPos = 0,0,0
 	attPos0 = -1.180511,-2.06686,-0.316317
 	rot = 9.432685E-08,0.130526,-7.164837E-07,-0.9914449
@@ -5622,7 +5253,7 @@ PART
 	PARTDATA
 	{
 		tgt = 4293346902
-		pos = -1.086866,0.2046219,0.1319882
+		pos = -1.086867,0.2046086,0.1319882
 		rot = 0,0.7078436,-1.278843E-07,0.7063692
 		dir = -0.9758148,0.1836925,0.1185022
 	}
@@ -5679,7 +5310,7 @@ PART
 {
 	part = strutConnector_4293347372
 	partName = CompoundPart
-	pos = 0.2310097,11.26091,-0.13302
+	pos = 0.2637202,27.53742,-0.2617463
 	attPos = 0,0,0
 	attPos0 = -0.3163165,-2.06686,1.180511
 	rot = -4.399313E-07,-0.6087617,-5.733296E-07,-0.7933531
@@ -5709,7 +5340,7 @@ PART
 	PARTDATA
 	{
 		tgt = 4293346644
-		pos = -1.08682,0.2045733,0.1319822
+		pos = -1.086819,0.2045733,0.1319822
 		rot = 0,0.7078438,-1.278834E-07,0.706369
 		dir = -0.9758148,0.1836925,0.1185022
 	}
@@ -5766,7 +5397,7 @@ PART
 {
 	part = strutConnector_4293347310
 	partName = CompoundPart
-	pos = 1.727837,11.26091,-0.9972141
+	pos = 1.760548,27.53742,-1.12594
 	attPos = 0,0,0
 	attPos0 = 1.180512,-2.06686,0.3163168
 	rot = -7.164837E-07,-0.9914449,-9.432685E-08,-0.130526
@@ -5796,8 +5427,8 @@ PART
 	PARTDATA
 	{
 		tgt = 4293346386
-		pos = -1.086869,0.2045924,0.1319867
-		rot = 0,0.7078438,-1.278831E-07,0.706369
+		pos = -1.086867,0.2045838,0.1319868
+		rot = 0,0.707844,-1.278829E-07,0.7063689
 		dir = -0.9758148,0.1836925,0.1185022
 	}
 	MODULE
@@ -5853,7 +5484,7 @@ PART
 {
 	part = fuelTank3-2_4293347248
 	partName = Part
-	pos = 0.5473227,5.827772,-1.313533
+	pos = 0.5800332,22.10428,-1.442259
 	attPos = 0,0,0
 	attPos0 = 0,-7.5,0
 	rot = 0,0,0,1
@@ -5945,7 +5576,7 @@ PART
 {
 	part = liquidEngine1-2_4293347218
 	partName = Part
-	pos = 0.5473227,1.012465,-1.313533
+	pos = 0.5800332,17.28897,-1.442259
 	attPos = 0,0,0
 	attPos0 = 0,-4.815308,0
 	rot = 0,0,0,1
@@ -6294,7 +5925,7 @@ PART
 {
 	part = winglet3_4293347112
 	partName = Part
-	pos = -0.6635013,3.487633,-2.524357
+	pos = -0.6307908,19.76414,-2.653083
 	attPos = 0,0,0
 	attPos0 = -1.210824,-2.340141,-1.210824
 	rot = 3.421474E-08,0.3826835,-8.260169E-08,-0.9238796
@@ -6418,7 +6049,7 @@ PART
 {
 	part = winglet3_4293347072
 	partName = Part
-	pos = -0.6635013,3.487633,-0.10271
+	pos = -0.6307908,19.76414,-0.2314363
 	attPos = 0,0,0
 	attPos0 = -1.210824,-2.340141,1.210823
 	rot = -3.421474E-08,-0.3826835,-8.260169E-08,-0.9238796
@@ -6542,7 +6173,7 @@ PART
 {
 	part = winglet3_4293347032
 	partName = Part
-	pos = 1.758146,3.487633,-0.10271
+	pos = 1.790856,19.76414,-0.2314363
 	attPos = 0,0,0
 	attPos0 = 1.210824,-2.340141,1.210823
 	rot = -8.260169E-08,-0.9238796,-3.421474E-08,-0.3826834
@@ -6666,7 +6297,7 @@ PART
 {
 	part = winglet3_4293346992
 	partName = Part
-	pos = 1.758146,3.487633,-2.524357
+	pos = 1.790856,19.76414,-2.653083
 	attPos = 0,0,0
 	attPos0 = 1.210824,-2.340141,-1.210824
 	rot = -8.260169E-08,-0.9238796,3.421474E-08,0.3826835
@@ -6790,7 +6421,7 @@ PART
 {
 	part = radialDecoupler2_4293346952
 	partName = Part
-	pos = -0.6372734,7.766579,-1.313533
+	pos = -0.6045629,24.04309,-1.442259
 	attPos = 0,0,0
 	attPos0 = -1.184596,1.938808,0
 	rot = 0,0,0,1
@@ -6990,7 +6621,7 @@ PART
 {
 	part = MassiveBooster_4293346902
 	partName = Part
-	pos = -1.889364,7.869129,-1.313541
+	pos = -1.856654,24.14564,-1.442267
 	attPos = 0,0,0
 	attPos0 = -1.252088,0.1025515,-3.576281E-07
 	rot = -2.52881E-07,-0.7071068,-2.52881E-07,0.7071068
@@ -7229,10 +6860,10 @@ PART
 {
 	part = noseCone_4293346834
 	partName = Part
-	pos = -1.88936,15.29841,-1.313541
+	pos = -1.85665,31.57492,-1.442267
 	attPos = 0,0,0
 	attPos0 = -4.05899E-14,7.42916,1.023191E-07
-	rot = -8.553612E-08,-0.3826832,2.065029E-07,-0.9238797
+	rot = -8.553613E-08,-0.3826832,2.065029E-07,-0.9238797
 	attRot = 0,0,0,1
 	attRot0 = -5.132182E-08,-0.9238796,-1.239019E-07,-0.3826833
 	mir = 1,1,1
@@ -7292,7 +6923,7 @@ PART
 {
 	part = launchClamp1_4293346806
 	partName = Part
-	pos = -3.020015,6.072927,-1.966294
+	pos = -2.987305,22.34944,-2.09502
 	attPos = 0,0,0
 	attPos0 = -0.6527607,-1.796137,1.130614
 	rot = 1.788136E-07,0.4999998,-3.097146E-07,0.8660256
@@ -7326,10 +6957,10 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 2.668473
-		height = 6.73308
+		scaleFactor = 9.119219
+		height = 23.00959
 		stagingEnabled = True
-		towerRot = -1.788136E-07,-0.4999998,3.097145E-07,0.8660255
+		towerRot = -1.788136E-07,-0.4999998,3.097146E-07,0.8660255
 		EVENTS
 		{
 			Release
@@ -7499,7 +7130,7 @@ PART
 {
 	part = sepMotor1_4284163396
 	partName = Part
-	pos = -1.760237,14.71571,-0.8316495
+	pos = -1.727527,30.99222,-0.9603756
 	attPos = 0,0,0
 	attPos0 = 0.4818902,6.84657,-0.1291217
 	rot = 0.09272199,0.09272194,0.7010009,0.7010015
@@ -7683,7 +7314,7 @@ PART
 {
 	part = sepMotor1_4284156274
 	partName = Part
-	pos = -1.889359,14.73913,-1.814281
+	pos = -1.856649,31.01564,-1.943007
 	attPos = 0,0,0
 	attPos0 = -0.5007395,6.869998,4.435432E-07
 	rot = -0.7071065,0.7071071,0.0002825558,-0.0002825187
@@ -7867,7 +7498,7 @@ PART
 {
 	part = sepMotor1_4278955292
 	partName = Part
-	pos = -1.760298,2.597759,-0.8318419
+	pos = -1.727588,18.87427,-0.960568
 	attPos = 0,0,0
 	attPos0 = 0.4816979,-5.271369,-0.1290703
 	rot = -0.09272199,-0.09272191,-0.701001,-0.7010015
@@ -8051,7 +7682,7 @@ PART
 {
 	part = sepMotor1_4278951096
 	partName = Part
-	pos = -1.760264,2.572384,-1.795367
+	pos = -1.727553,18.84889,-1.924093
 	attPos = 0,0,0
 	attPos0 = -0.4818258,-5.296746,-0.1291041
 	rot = -0.7010573,0.7010576,-0.09229589,0.09229585
@@ -8235,7 +7866,7 @@ PART
 {
 	part = radialDecoupler2_4293346694
 	partName = Part
-	pos = 0.5473227,7.766579,-0.128937
+	pos = 0.5800332,24.04309,-0.2576632
 	attPos = 0,0,0
 	attPos0 = 0,1.938808,1.184596
 	rot = 0,0.7071068,0,0.7071068
@@ -8435,7 +8066,7 @@ PART
 {
 	part = MassiveBooster_4293346644
 	partName = Part
-	pos = 0.5473148,7.869129,1.123156
+	pos = 0.5800253,24.14564,0.9944299
 	attPos = 0,0,0
 	attPos0 = -1.252088,0.1025515,-3.576281E-07
 	rot = -3.576282E-07,0,0,1
@@ -8674,10 +8305,10 @@ PART
 {
 	part = noseCone_4293346576
 	partName = Part
-	pos = 0.5473148,15.29841,1.123153
+	pos = 0.5800253,31.57492,0.9944271
 	attPos = 0,0,0
 	attPos0 = -4.05899E-14,7.42916,1.023191E-07
-	rot = 8.5536E-08,-0.9238796,2.065029E-07,-0.3826838
+	rot = 8.553597E-08,-0.9238796,2.065029E-07,-0.3826838
 	attRot = 0,0,0,1
 	attRot0 = -5.132182E-08,-0.9238796,-1.239019E-07,-0.3826833
 	mir = 1,1,1
@@ -8737,7 +8368,7 @@ PART
 {
 	part = launchClamp1_4293346548
 	partName = Part
-	pos = -0.1054391,6.072927,2.25381
+	pos = -0.07272869,22.34944,2.125084
 	attPos = 0,0,0
 	attPos0 = -0.6527607,-1.796137,1.130614
 	rot = -9.256092E-08,0.9659259,-3.454414E-07,0.2588193
@@ -8771,8 +8402,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 2.668473
-		height = 6.73308
+		scaleFactor = 9.119219
+		height = 23.00959
 		stagingEnabled = True
 		towerRot = 9.256091E-08,-0.9659258,3.454414E-07,0.2588193
 		EVENTS
@@ -8944,7 +8575,7 @@ PART
 {
 	part = sepMotor1_4284163340
 	partName = Part
-	pos = 1.029205,14.71571,0.9940315
+	pos = 1.061916,30.99222,0.8653055
 	attPos = 0,0,0
 	attPos0 = 0.4818901,6.84657,-0.1291215
 	rot = 0.5612469,0.5612473,0.4301182,0.4301186
@@ -9128,7 +8759,7 @@ PART
 {
 	part = sepMotor1_4284156218
 	partName = Part
-	pos = 0.04657394,14.73913,1.123153
+	pos = 0.07928431,31.01564,0.9944271
 	attPos = 0,0,0
 	attPos0 = -0.5007396,6.869998,5.627593E-07
 	rot = -0.4998001,0.4998004,0.5001997,-0.5002
@@ -9312,7 +8943,7 @@ PART
 {
 	part = sepMotor1_4278955234
 	partName = Part
-	pos = 1.029013,2.597759,0.9940914
+	pos = 1.061724,18.87427,0.8653654
 	attPos = 0,0,0
 	attPos0 = 0.481698,-5.271369,-0.1290701
 	rot = -0.561247,-0.5612472,-0.4301183,-0.4301186
@@ -9496,7 +9127,7 @@ PART
 {
 	part = sepMotor1_4278951036
 	partName = Part
-	pos = 0.06548786,2.572384,0.9940575
+	pos = 0.09819824,18.84889,0.8653315
 	attPos = 0,0,0
 	attPos0 = -0.4818258,-5.296746,-0.1291038
 	rot = -0.5609856,0.5609856,0.4304592,-0.4304596
@@ -9680,7 +9311,7 @@ PART
 {
 	part = radialDecoupler2_4293346436
 	partName = Part
-	pos = 1.731919,7.766579,-1.313533
+	pos = 1.764629,24.04309,-1.442259
 	attPos = 0,0,0
 	attPos0 = 1.184596,1.938808,0
 	rot = 0,1,0,-4.371139E-08
@@ -9880,7 +9511,7 @@ PART
 {
 	part = MassiveBooster_4293346386
 	partName = Part
-	pos = 2.98401,7.869129,-1.313525
+	pos = 3.01672,24.14564,-1.442251
 	attPos = 0,0,0
 	attPos0 = -1.252088,0.1025515,-3.576281E-07
 	rot = -2.52881E-07,0.7071068,2.52881E-07,0.7071068
@@ -10119,10 +9750,10 @@ PART
 {
 	part = noseCone_4293346318
 	partName = Part
-	pos = 2.984007,15.29841,-1.313525
+	pos = 3.016717,31.57492,-1.442251
 	attPos = 0,0,0
 	attPos0 = -4.05899E-14,7.42916,1.023191E-07
-	rot = 2.065029E-07,-0.9238796,8.553601E-08,0.3826832
+	rot = 2.065029E-07,-0.9238796,8.553598E-08,0.3826832
 	attRot = 0,0,0,1
 	attRot0 = -5.132182E-08,-0.9238796,-1.239019E-07,-0.3826833
 	mir = 1,1,1
@@ -10182,7 +9813,7 @@ PART
 {
 	part = launchClamp1_4293346290
 	partName = Part
-	pos = 4.114658,6.072927,-0.6607711
+	pos = 4.147368,22.34944,-0.7894972
 	attPos = 0,0,0
 	attPos0 = -0.6527607,-1.796137,1.130614
 	rot = -3.097144E-07,0.8660257,-1.788136E-07,-0.4999998
@@ -10216,10 +9847,10 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 2.668473
-		height = 6.73308
+		scaleFactor = 9.119219
+		height = 23.00959
 		stagingEnabled = True
-		towerRot = 3.097144E-07,-0.8660256,1.788135E-07,-0.4999997
+		towerRot = 3.097144E-07,-0.8660256,1.788136E-07,-0.4999997
 		EVENTS
 		{
 			Release
@@ -10389,7 +10020,7 @@ PART
 {
 	part = sepMotor1_4284163284
 	partName = Part
-	pos = 2.854883,14.71571,-1.795415
+	pos = 2.887593,30.99222,-1.924141
 	attPos = 0,0,0
 	attPos0 = 0.4818902,6.84657,-0.1291216
 	rot = 0.701001,0.7010015,-0.09272172,-0.09272167
@@ -10573,7 +10204,7 @@ PART
 {
 	part = sepMotor1_4284156162
 	partName = Part
-	pos = 2.984005,14.73913,-0.8127841
+	pos = 3.016716,31.01564,-0.9415102
 	attPos = 0,0,0
 	attPos0 = -0.5007396,6.869998,3.245102E-07
 	rot = 0.0002824377,-0.0002824304,0.7071065,-0.707107
@@ -10757,10 +10388,10 @@ PART
 {
 	part = sepMotor1_4278955176
 	partName = Part
-	pos = 2.854944,2.597759,-1.795223
+	pos = 2.887654,18.87427,-1.923949
 	attPos = 0,0,0
 	attPos0 = 0.4816979,-5.271369,-0.1290702
-	rot = -0.701001,-0.7010015,0.0927219,0.09272179
+	rot = -0.701001,-0.7010015,0.0927219,0.09272173
 	attRot = 0,0,0.7071068,0.7071068
 	attRot0 = -0.5612471,-0.5612471,-0.4301184,-0.4301184
 	mir = 1,1,1
@@ -10941,10 +10572,10 @@ PART
 {
 	part = sepMotor1_4278950976
 	partName = Part
-	pos = 2.854909,2.572384,-0.8316978
+	pos = 2.887619,18.84889,-0.9604239
 	attPos = 0,0,0
 	attPos0 = -0.4818258,-5.296746,-0.1291042
-	rot = -0.09229636,0.09229615,0.7010573,-0.7010574
+	rot = -0.09229642,0.09229618,0.7010574,-0.7010574
 	attRot = 0,0,0.7071067,-0.7071067
 	attRot0 = -0.5609856,0.5609855,0.4304593,-0.4304593
 	mir = 1,1,1
@@ -11125,7 +10756,7 @@ PART
 {
 	part = radialDecoupler2_4293346178
 	partName = Part
-	pos = 0.5473227,7.766579,-2.498129
+	pos = 0.5800332,24.04309,-2.626855
 	attPos = 0,0,0
 	attPos0 = 0,1.938808,-1.184596
 	rot = 0,0.7071068,0,-0.7071068
@@ -11325,7 +10956,7 @@ PART
 {
 	part = MassiveBooster_4293346128
 	partName = Part
-	pos = 0.5473318,7.869129,-3.750223
+	pos = 0.5800423,24.14564,-3.878949
 	attPos = 0,0,0
 	attPos0 = -1.252088,0.1025515,-3.576281E-07
 	rot = 0,1,3.576282E-07,0
@@ -11564,10 +11195,10 @@ PART
 {
 	part = noseCone_4293346060
 	partName = Part
-	pos = 0.5473318,15.29841,-3.750219
+	pos = 0.5800423,31.57492,-3.878945
 	attPos = 0,0,0
 	attPos0 = -4.05899E-14,7.42916,1.023191E-07
-	rot = 2.065029E-07,-0.3826838,-8.5536E-08,0.9238796
+	rot = 2.065029E-07,-0.3826838,-8.553597E-08,0.9238796
 	attRot = 0,0,0,1
 	attRot0 = -5.132182E-08,-0.9238796,-1.239019E-07,-0.3826833
 	mir = 1,1,1
@@ -11627,7 +11258,7 @@ PART
 {
 	part = launchClamp1_4293346032
 	partName = Part
-	pos = 1.200084,6.072927,-4.880872
+	pos = 1.232795,22.34944,-5.009599
 	attPos = 0,0,0
 	attPos0 = -0.6527607,-1.796137,1.130614
 	rot = -3.454414E-07,0.2588193,9.256092E-08,-0.9659259
@@ -11661,8 +11292,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 2.668473
-		height = 6.73308
+		scaleFactor = 9.119219
+		height = 23.00959
 		stagingEnabled = True
 		towerRot = 3.454414E-07,-0.2588193,-9.256091E-08,-0.9659258
 		EVENTS
@@ -11834,7 +11465,7 @@ PART
 {
 	part = sepMotor1_4284163640
 	partName = Part
-	pos = 0.06544057,14.71571,-3.621097
+	pos = 0.09815094,30.99222,-3.749824
 	attPos = 0,0,0
 	attPos0 = 0.4818901,6.84657,-0.1291217
 	rot = 0.4301182,0.4301187,-0.5612469,-0.5612472
@@ -12018,7 +11649,7 @@ PART
 {
 	part = sepMotor1_4284157938
 	partName = Part
-	pos = 1.048071,14.73913,-3.750218
+	pos = 1.080782,31.01564,-3.878944
 	attPos = 0,0,0
 	attPos0 = -0.5007395,6.869998,3.243407E-07
 	rot = 0.5001997,-0.5002,0.4998001,-0.4998004
@@ -12202,7 +11833,7 @@ PART
 {
 	part = sepMotor1_4278956364
 	partName = Part
-	pos = 0.06563291,2.597759,-3.621157
+	pos = 0.09834328,18.87427,-3.749883
 	attPos = 0,0,0
 	attPos0 = 0.4816978,-5.271369,-0.1290703
 	rot = -0.4301183,-0.4301187,0.561247,0.5612472
@@ -12386,7 +12017,7 @@ PART
 {
 	part = sepMotor1_4278951834
 	partName = Part
-	pos = 1.029158,2.572384,-3.621123
+	pos = 1.061869,18.84889,-3.749849
 	attPos = 0,0,0
 	attPos0 = -0.4818256,-5.296746,-0.1291041
 	rot = 0.4304592,-0.4304596,0.5609856,-0.5609856
@@ -12570,7 +12201,7 @@ PART
 {
 	part = RTShortAntenna1_4292589904
 	partName = Part
-	pos = -0.3580706,14.52634,-2.218926
+	pos = -0.3253601,30.80285,-2.347652
 	attPos = 0,0,0
 	attPos0 = -0.9053933,1.198577,-0.9053932
 	rot = 5.926132E-08,0.3826835,-1.430695E-07,-0.9238796
@@ -12782,7 +12413,7 @@ PART
 {
 	part = solarPanels5_4293077776
 	partName = Part
-	pos = -0.3364745,15.63796,-2.19733
+	pos = -0.303764,31.91447,-2.326056
 	attPos = 0,0,0
 	attPos0 = -0.8837972,2.310195,-0.883797
 	rot = -5.926132E-08,0.9238796,-1.430695E-07,-0.3826835
@@ -12918,7 +12549,7 @@ PART
 {
 	part = solarPanels5_4293077500
 	partName = Part
-	pos = -0.6599665,15.63796,-0.9900407
+	pos = -0.627256,31.91447,-1.118767
 	attPos = 0,0,0
 	attPos0 = -1.207289,2.310195,0.3234923
 	rot = -1.228565E-07,0.6087614,-9.427114E-08,-0.7933534
@@ -13054,7 +12685,7 @@ PART
 {
 	part = solarPanels5_4293077466
 	partName = Part
-	pos = 0.2238307,15.63796,-0.1062435
+	pos = 0.2565412,31.91447,-0.2349697
 	attPos = 0,0,0
 	attPos0 = -0.323492,2.310195,1.207289
 	rot = -1.535325E-07,0.1305261,-2.021292E-08,-0.9914449
@@ -13190,7 +12821,7 @@ PART
 {
 	part = solarPanels5_4293077432
 	partName = Part
-	pos = 1.43112,15.63796,-0.429736
+	pos = 1.46383,31.91447,-0.5584623
 	attPos = 0,0,0
 	attPos0 = 0.8837972,2.310195,0.883797
 	rot = -1.430695E-07,-0.3826835,5.926132E-08,-0.9238796
@@ -13326,7 +12957,7 @@ PART
 {
 	part = solarPanels5_4293077398
 	partName = Part
-	pos = 1.754612,15.63796,-1.637025
+	pos = 1.787322,31.91447,-1.765751
 	attPos = 0,0,0
 	attPos0 = 1.207289,2.310195,-0.3234924
 	rot = -9.427114E-08,-0.7933534,1.228566E-07,-0.6087614
@@ -13462,7 +13093,7 @@ PART
 {
 	part = solarPanels5_4293077364
 	partName = Part
-	pos = 0.870815,15.63796,-2.520822
+	pos = 0.9035255,31.91447,-2.649548
 	attPos = 0,0,0
 	attPos0 = 0.3234923,2.310195,-1.207289
 	rot = -2.021294E-08,-0.9914449,1.535325E-07,-0.1305262
@@ -13598,7 +13229,7 @@ PART
 {
 	part = RTShortAntenna1_4293345920
 	partName = Part
-	pos = -0.3568111,20.62752,-2.217668
+	pos = -0.3241006,36.90403,-2.346394
 	attPos = 0,0,0
 	attPos0 = -0.9041328,-0.04644394,-0.9041325
 	rot = -1.722837E-07,0.3826834,4.159296E-07,-0.9238796
@@ -13810,7 +13441,7 @@ PART
 {
 	part = solarPanels5_4276304652
 	partName = Part
-	pos = 1.737983,20.80392,-0.9944964
+	pos = 1.770693,37.08043,-1.123223
 	attPos = 0,0,0
 	attPos0 = 1.19066,0.1299534,0.3190365
 	rot = 4.374106E-07,0.6087614,-3.35637E-07,0.7933534
@@ -13946,7 +13577,7 @@ PART
 {
 	part = solarPanels5_4276304378
 	partName = Part
-	pos = 1.418947,20.80392,-2.185157
+	pos = 1.451658,37.08043,-2.313883
 	attPos = 0,0,0
 	attPos0 = 0.8716241,0.1299534,-0.8716239
 	rot = 2.109902E-07,0.9238796,-5.093754E-07,0.3826835
@@ -14082,7 +13713,7 @@ PART
 {
 	part = solarPanels5_4276304344
 	partName = Part
-	pos = 0.2282861,20.80392,-2.504193
+	pos = 0.2609966,37.08043,-2.632919
 	attPos = 0,0,0
 	attPos0 = -0.3190366,0.1299534,-1.19066
 	rot = -7.196489E-08,0.9914449,-5.466272E-07,-0.1305262
@@ -14218,7 +13849,7 @@ PART
 {
 	part = solarPanels5_4276304310
 	partName = Part
-	pos = -0.6433378,20.80392,-1.632569
+	pos = -0.6106273,37.08043,-1.761295
 	attPos = 0,0,0
 	attPos0 = -1.19066,0.1299534,-0.3190365
 	rot = -3.35637E-07,0.7933534,-4.374105E-07,-0.6087615
@@ -14354,7 +13985,7 @@ PART
 {
 	part = solarPanels5_4276304276
 	partName = Part
-	pos = -0.3243013,20.80392,-0.4419089
+	pos = -0.2915908,37.08043,-0.5706351
 	attPos = 0,0,0
 	attPos0 = -0.871624,0.1299534,0.8716241
 	rot = -5.093755E-07,0.3826834,-2.109902E-07,-0.9238796
@@ -14490,7 +14121,7 @@ PART
 {
 	part = solarPanels5_4276304242
 	partName = Part
-	pos = 0.866359,20.80392,-0.1228724
+	pos = 0.8990695,37.08043,-0.2515986
 	attPos = 0,0,0
 	attPos0 = 0.3190363,0.1299534,1.190661
 	rot = -5.466272E-07,-0.1305261,7.196483E-08,-0.9914449
@@ -14601,6 +14232,375 @@ PART
 		defaultScale = 100
 		defaultTransformScale = (1, 1, 1)
 		DryCost = 75
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = sasModule_4293324850
+	partName = Part
+	pos = 0.5800332,40.33501,-1.442259
+	attPos = 0,0,0
+	attPos0 = 0,0.1521721,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	link = SurveyScanner_4294669412
+	attN = bottom,probeCoreOcto2_4293936190
+	attN = top,SurveyScanner_4294669412
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+		isEnabled = True
+		stateString = Active
+		stagingEnabled = True
+		WheelState = Active
+		EVENTS
+		{
+			OnToggle
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Toggle Torque
+				guiName = Toggle Torque
+				category = Toggle Torque
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			Activate
+			{
+				actionGroup = None
+			}
+			Deactivate
+			{
+				actionGroup = None
+			}
+			Toggle
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 0.625
+		defaultScale = 0.625
+		defaultTransformScale = (0.5, 0.5, 0.5)
+		DryCost = 600
+		stagingEnabled = True
+		EVENTS
+		{
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+}
+PART
+{
+	part = SurveyScanner_4294669412
+	partName = Part
+	pos = 0.5800332,40.42612,-1.442259
+	attPos = 0,0,0
+	attPos0 = 0,0.09111023,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	istg = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = (0.0, 0.0, 0.0)
+	attN = bottom,sasModule_4293324850
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleOrbitalSurveyor
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			PerformSurvey
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Perform orbital survey
+				guiName = Perform orbital survey
+				category = Perform orbital survey
+				guiActiveUnfocused = True
+				unfocusedRange = 3
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleOrbitalScanner
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+			SwitchResource
+			{
+				active = True
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Resource
+				guiName = Resource
+				category = Resource
+				guiActiveUnfocused = True
+				unfocusedRange = 3
+				externalToEVAOnly = True
+			}
+			ToggleOverlay
+			{
+				active = True
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Toggle Overlay
+				guiName = Toggle Overlay
+				category = Toggle Overlay
+				guiActiveUnfocused = True
+				unfocusedRange = 3
+				externalToEVAOnly = True
+			}
+			SetColor
+			{
+				active = True
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Color: Monochrome
+				guiName = Color: Monochrome [0%]
+				category = Color: Monochrome
+				guiActiveUnfocused = True
+				unfocusedRange = 3
+				externalToEVAOnly = True
+			}
+			IncreaseCutoff
+			{
+				active = True
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Cutoff +
+				guiName = Cutoff +
+				category = Cutoff +
+				guiActiveUnfocused = True
+				unfocusedRange = 3
+				externalToEVAOnly = True
+			}
+			DecreaseCutoff
+			{
+				active = True
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Cutoff -
+				guiName = Cutoff -
+				category = Cutoff -
+				guiActiveUnfocused = True
+				unfocusedRange = 3
+				externalToEVAOnly = True
+			}
+			ActivateScanner
+			{
+				active = False
+				guiActive = True
+				guiActiveUncommand = False
+				guiIcon = Activate
+				guiName = Activate
+				category = Activate
+				guiActiveUnfocused = True
+				unfocusedRange = 3
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimationGroup
+		isEnabled = True
+		_isActive = False
+		isDeployed = False
+		stagingEnabled = True
+		EVENTS
+		{
+			DeployModule
+			{
+				active = True
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Deploy
+				guiName = Deploy Scanner
+				category = Deploy
+				guiActiveUnfocused = True
+				unfocusedRange = 3
+				externalToEVAOnly = True
+			}
+			RetractModule
+			{
+				active = False
+				guiActive = True
+				guiActiveEditor = True
+				guiActiveUncommand = False
+				guiIcon = Retract
+				guiName = Retract Scanner
+				category = Retract
+				guiActiveUnfocused = True
+				unfocusedRange = 3
+				externalToEVAOnly = True
+			}
+			ToggleStaging
+			{
+				active = True
+				guiActive = False
+				guiActiveUncommand = False
+				guiIcon = Disable Staging
+				guiName = Disable Staging
+				category = Disable Staging
+				guiActiveUnfocused = False
+				unfocusedRange = 2
+				externalToEVAOnly = True
+			}
+		}
+		ACTIONS
+		{
+			DeployModuleAction
+			{
+				actionGroup = None
+			}
+			RetractModuleAction
+			{
+				actionGroup = None
+			}
+			ToggleModuleAction
+			{
+				actionGroup = None
+			}
+		}
+	}
+	MODULE
+	{
+		name = TweakScale
+		isEnabled = True
+		currentScale = 100
+		defaultScale = 100
+		defaultTransformScale = (1, 1, 1)
+		DryCost = 1500
 		stagingEnabled = True
 		EVENTS
 		{
